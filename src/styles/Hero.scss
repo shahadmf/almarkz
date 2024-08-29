@@ -1,0 +1,49 @@
+@import './variables';
+
+.hero {
+  width: auto;
+  .background-image {
+    background-image: url("../assets/HeroBackground1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 80vh;
+    margin: 0%;
+  }
+
+  .hero-content {
+    position: absolute;
+    width: 96%;
+    height: 40vh;
+    margin: 5% 0;
+    padding: 2%;
+    background-color: rgba(236, 240, 241, 0.7);
+
+    h1{
+        color: $soft-navy;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $muted-teal;
+    }
+
+    h4{
+      font-size: 1rem;
+      font-weight: 600;
+      color: $dark-gray;
+    }
+
+  }
+
+  button{
+    border-radius: 10%;
+    padding: 7px 15px;
+    height: fit-content;
+    color: #fff;
+    background-color: $soft-navy;
+    border: none;
+    font-family: Inter, 'IBM Plex Sans Arabic', sans-serif;
+  }
+}

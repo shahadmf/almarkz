@@ -1,15 +1,9 @@
-$background-color: #ecf0f1;
-$text-color: #52525b;
-$charcoal-gray: #95a5a6;
-$dark-gray: #5e6868;
-$muted-teal: #16a085;
-$pastel-gray: #ecf0f1;
-$soft-coral: #f1c40f;
-$soft-navy: #34495e;
+@import './styles/variables';
 
 .navbar {
   background-color: $background-color;
-  padding: 1rem;
+  padding: 0.5rem;
+  height: auto;
   display: flex;
   justify-content: start;
 
@@ -17,6 +11,17 @@ $soft-navy: #34495e;
     img {
       width: 50px;
     }
+  }
+
+  button{
+    border-radius: 10%;
+    margin: 1rem;
+    padding: 5px 15px;
+    height: fit-content;
+    color: #fff;
+    background-color: $soft-navy;
+    border: none;
+    font-family: Inter, 'IBM Plex Sans Arabic', sans-serif;
   }
 
   .navbar-menu {
@@ -41,6 +46,7 @@ $soft-navy: #34495e;
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 1rem;
 
     li {
       a {
