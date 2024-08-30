@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 .hero {
   width: auto;
@@ -7,44 +7,49 @@
     background-size: 100%;
     background-repeat: no-repeat;
     width: auto;
-    height: 80vh;
+    height: 100%;
     margin: 0%;
+    padding: 5% 0%;
   }
 
   .hero-content {
-    position: absolute;
+    position: relative;
     width: 96%;
-    height: 40vh;
+    height: 50%;
     margin: 5% 0;
     padding: 2%;
     background-color: rgba(236, 240, 241, 0.7);
 
-    h1{
-        color: $soft-navy;
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: $soft-navy;
+      margin: 1% 0px;
     }
 
-    h3{
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: $muted-teal;
-    }
-
-    h4{
-      font-size: 1rem;
+    h3 {
+      font-size: 2rem;
       font-weight: 600;
-      color: $dark-gray;
+      color: $muted-teal;
+      margin: 1% 0px;
     }
 
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $dark-gray;
+      margin: 1.5% 0px;
+    }
   }
 
-  button{
+  button {
     border-radius: 10px;
     padding: 7px 15px;
     height: fit-content;
     color: #fff;
     background-color: $soft-navy;
     border: none;
-    font-family: Inter, 'IBM Plex Sans Arabic', sans-serif;
+    font-family: Inter, "IBM Plex Sans Arabic", sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
   }
