@@ -1,0 +1,55 @@
+@import "../styles/variables";
+
+.Footer {
+  width: 90%;
+  height: 100px;
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+
+  .Footer-text {
+    width: 60%;
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2%;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1%;
+    }
+
+    span {
+      font-size: 0.85rem;
+    }
+  }
+
+  .subscription-form {
+    width: 30%;
+    margin: 3% 2%;
+
+    input {
+      width: 65%;
+      height: 30px;
+      padding: 5px 15px;
+      // margin: 2%;
+      border: 0cap;
+      border-radius: 0px 5px 5px 0px;
+      box-shadow:  5px 3px 20px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    button {
+      width: 20%;
+      padding: 10px;
+      border-radius: 5px 0px 0px 5px;
+      height: fit-content;
+      color: #fff;
+      background-color: $soft-navy;
+      border: none;
+      font-family: Inter, "IBM Plex Sans Arabic", sans-serif;
+      box-shadow:  5px 3px 20px 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
