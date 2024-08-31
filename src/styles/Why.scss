@@ -1,0 +1,72 @@
+@import "../styles/variables";
+
+.container {
+  width: 90%;
+  margin: 5% auto;
+  padding: 20px;
+//   margin: 5% 3%;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $soft-navy;
+    margin: 1% 0px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $pastel-gray;
+      box-shadow:  5px 3px 20px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      width: 25%;
+
+      .badge {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: auto;
+        // box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+         box-shadow:  5px 2px 15px 1px rgba(0, 0, 0, 0.3);
+
+        i {
+          font-size: 1.2rem;
+          margin: 25%;
+        }
+      }
+
+      .b1 {
+        i {
+          color: $muted-teal;
+        }
+      }
+
+      .b2 {
+        i {
+          color: $soft-coral;
+        }
+      }
+
+      .card-body{
+        padding: 0px;
+        text-align: center;
+
+        h3{
+            font-size: 1.2rem;
+            color: $soft-navy;
+        }
+        p{
+            color: $text-color;
+            font-weight: 400;
+        }
+      }
+    }
+  }
+}
