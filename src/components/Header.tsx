@@ -12,7 +12,9 @@ const Header = () => {
     <div>
       <nav className="navbar">
         <div className="navbar-logo">
-          <img src={logo} alt="logo" />
+          <a href="#hero">
+            <img src={logo} alt="logo" />
+          </a>
         </div>
         <div className="navbar-menu">
           <div className="menu-icon" onClick={toggleMenu}>

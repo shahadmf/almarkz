@@ -3,7 +3,7 @@ import "../styles/Hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="background-image">
       <div className="hero-content">
         <h3> أسرتك متصلة، حياتك مرتبة</h3>
