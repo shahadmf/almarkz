@@ -1,0 +1,75 @@
+@import "../styles/variables";
+
+.Pricing {
+  width: 95%;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 9px 20px 19px rgba(0, 0, 0, 0.3);
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $soft-navy;
+    margin: 1% 0px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $pastel-gray;
+      box-shadow: 5px 3px 20px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 5px;
+      width: 28%;
+
+      h4 {
+        font-size: 1.2rem;
+        color: $charcoal-gray;
+        margin: 5px;
+        font-weight: 500;
+      }
+      p {
+        color: $text-color;
+        font-weight: 400;
+
+        .price {
+          font-size: 2.5rem;
+          font-weight: 800;
+          color: $soft-navy;
+        }
+      }
+
+      .btn {
+        border-radius: 10px;
+        width: 100%;
+        padding: 7px 15px;
+        height: fit-content;
+        color: #fff;
+        // background-color: $soft-navy;
+        border: none;
+        font-family: Inter, "IBM Plex Sans Arabic", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      
+      .b1{
+        background-color: $soft-navy;
+      }
+      .b2{
+        background-color: $muted-teal;
+      }
+      .b3{
+        background-color: $soft-coral;
+      }
+    }
+  }
+}

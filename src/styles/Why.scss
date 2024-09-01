@@ -1,10 +1,12 @@
 @import "../styles/variables";
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: 5% auto;
   padding: 20px;
-//   margin: 5% 3%;
+    border-radius: 15px;
+  box-shadow: 9px 20px 19px rgba(0, 0, 0, 0.3);
+  //   margin: 5% 3%;
 
   h1 {
     font-size: 2.5rem;
@@ -22,7 +24,7 @@
       align-items: center;
       justify-content: center;
       background-color: $pastel-gray;
-      box-shadow:  5px 3px 20px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 5px 3px 20px 3px rgba(0, 0, 0, 0.3);
       border-radius: 10px;
       padding: 20px;
       margin: 20px;
@@ -34,7 +36,7 @@
         border-radius: 50%;
         padding: auto;
         // box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-         box-shadow:  5px 2px 15px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 5px 2px 15px 1px rgba(0, 0, 0, 0.3);
 
         i {
           font-size: 1.2rem;
@@ -54,17 +56,17 @@
         }
       }
 
-      .card-body{
+      .card-body {
         padding: 0px;
         text-align: center;
 
-        h3{
-            font-size: 1.2rem;
-            color: $soft-navy;
+        h3 {
+          font-size: 1.2rem;
+          color: $soft-navy;
         }
-        p{
-            color: $text-color;
-            font-weight: 400;
+        p {
+          color: $text-color;
+          font-weight: 400;
         }
       }
     }
