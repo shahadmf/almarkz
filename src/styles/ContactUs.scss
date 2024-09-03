@@ -1,0 +1,63 @@
+@import "../styles/variables";
+
+.ContactUs {
+  width: 35%;
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 15px;
+  box-shadow: 9px 9px 20px 19px rgba(0, 0, 0, 0.3);
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $soft-navy;
+    margin: 1% 0px;
+  }
+
+  p{
+    color: $text-color;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 5%;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      label {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: $text-color;
+      }
+
+      input {
+        border: none;
+        padding: 10px;
+      }
+      #email,
+      #name {
+        width: 70%;
+      }
+      #message {
+        width: 90%;
+        height: 70px;
+      }
+
+      button {
+        border-radius: 10px;
+        margin: 10px;
+        padding: 7px 25px;
+        height: fit-content;
+        color: #fff;
+        background-color: $soft-navy;
+        border: none;
+        font-family: Inter, "IBM Plex Sans Arabic", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

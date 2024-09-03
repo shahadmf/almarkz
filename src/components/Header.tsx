@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,9 @@ const Header = () => {
     <div>
       <nav className="navbar">
         <div className="navbar-logo">
-          <a href="#hero">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-menu">
           <div className="menu-icon" onClick={toggleMenu}>
@@ -22,16 +23,16 @@ const Header = () => {
           </div>
           <ul className={isOpen ? "dropdown-active" : "navbar-links"}>
             <li>
-              <a href="#why">لماذا؟</a>
+              <Link to="/why">لماذا؟</Link>
             </li>
             <li>
-              <a href="#about">المزايا</a>
+              <Link to="/benefits">المزايا</Link>
             </li>
             <li>
-              <a href="#services">الباقات</a>
+              <Link to="/pricing">الباقات</Link>
             </li>
             <li>
-              <a href="#contact">تواصل معنا</a>
+              <Link to="/contact-us">تواصل معنا</Link>
             </li>
             <button className={isOpen ? "button-out" : "button-in"}>
               ابدأ الان
