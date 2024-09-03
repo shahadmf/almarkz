@@ -2,14 +2,24 @@
 
 .Footer {
   width: 90%;
-  height: 100px;
   margin: 5%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
 
+  @media (max-width: 768px) {
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .Footer-text {
     width: 60%;
+
+    @media (max-width: 768px) {
+      width: auto;
+    }
+
     h5 {
       font-size: 1.5rem;
       font-weight: 600;
@@ -30,6 +40,11 @@
     width: 30%;
     margin: 3% 2%;
 
+    @media (max-width: 768px) {
+      margin: 25px 15px;
+      width: auto;
+    }
+
     input {
       width: 65%;
       height: 30px;
@@ -37,7 +52,7 @@
       // margin: 2%;
       border: 0cap;
       border-radius: 0px 5px 5px 0px;
-      box-shadow:  5px 3px 20px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 5px 3px 20px 3px rgba(0, 0, 0, 0.3);
     }
 
     button {
@@ -49,7 +64,7 @@
       background-color: $soft-navy;
       border: none;
       font-family: Inter, "IBM Plex Sans Arabic", sans-serif;
-      box-shadow:  5px 3px 20px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 5px 3px 20px 3px rgba(0, 0, 0, 0.3);
     }
   }
 }

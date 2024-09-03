@@ -10,6 +10,10 @@
     height: 100%;
     margin: 0%;
     padding: 5% 0%;
+
+    @media (max-width: 768px) {
+      background-size: auto;
+    }
   }
 
   .hero-content {
@@ -25,6 +29,11 @@
       font-weight: 800;
       color: $soft-navy;
       margin: 1% 0px;
+
+      @media (max-width: 768px) {
+        font-size: 1.7rem;
+        font-weight: 800;
+      }
     }
 
     h3 {
@@ -32,6 +41,10 @@
       font-weight: 600;
       color: $muted-teal;
       margin: 1% 0px;
+      @media (max-width: 768px) {
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
     }
 
     h4 {
