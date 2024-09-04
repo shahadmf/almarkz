@@ -2,8 +2,15 @@ import React from "react";
 import "../styles/Pricing.scss";
 
 const Pricing = () => {
+  const handleClick = () => {
+    window.open(
+      "https://ws1hw6v5baf.typeform.com/almarkz",
+      "noopener noreferrer"
+    );
+  };
+
   return (
-    <div className="Pricing">
+    <div className="Pricing" id="pricing">
       <h1>الباقات</h1>
       <div className="cards">
         <div className="card">
@@ -15,7 +22,10 @@ const Pricing = () => {
             تنظيم الوقت العائلي وإدارة الموارد البسيطة. مشاركة المواقع الحية
             لأفراد العائلة. دعم فني أساسي.
           </p>
-          <button className="btn b1">اطلبها الآن</button>
+
+          <button className="btn b1" onClick={handleClick}>
+            اطلبها الآن
+          </button>
         </div>
         <div className="card">
           <h4> المتقدم</h4>
@@ -27,7 +37,9 @@ const Pricing = () => {
             خيارات تخصيص متقدمة لواجهة المستخدم وتتبع متقدم للمواقع. دعم فني
             متميز.
           </p>
-          <button className="btn b2">اطلبها الآن</button>
+          <button className="btn b2" onClick={handleClick}>
+            اطلبها الآن
+          </button>
         </div>
         <div className="card">
           <h4> الشامل</h4>
@@ -37,9 +49,11 @@ const Pricing = () => {
           <p>
             كل ميزات المتقدم. تغذية مباشرة من كاميرات المراقبة. تحليلات بيانات
             متقدمة وميزات أمان معززة. خيارات تخصيص برمجية خاصة وفقاً لاحتياجات
-            العائلة. 
+            العائلة.
           </p>
-          <button className="btn b3">اطلبها الآن</button>
+          <button className="btn b3" onClick={handleClick}>
+            اطلبها الآن
+          </button>
         </div>
       </div>
     </div>

@@ -1,12 +1,29 @@
 import React, { useState } from "react";
 import logo from "../assets/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLinkClick = (to: string, id: string) => {
+    navigate(to);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleClick = () => {
+    window.open(
+      "https://ws1hw6v5baf.typeform.com/almarkz",
+      "_blank",
+      "noopener noreferrer"
+    );
   };
 
   return (
@@ -23,10 +40,14 @@ const Header = () => {
           </div>
           <ul className={isOpen ? "dropdown-active" : "navbar-links"}>
             <li>
-              <Link to="/why">لماذا؟</Link>
+              <Link to="/" onClick={() => handleLinkClick("/", "why")}>
+                لماذا؟
+              </Link>
             </li>
             <li>
-              <Link to="/benefits">المزايا</Link>
+              <Link to="/" onClick={() => handleLinkClick("/", "benefits")}>
+                المزايا
+              </Link>
             </li>
             <li>
               <Link to="/pricing">الباقات</Link>
@@ -34,11 +55,17 @@ const Header = () => {
             <li>
               <Link to="/contact-us">تواصل معنا</Link>
             </li>
-            <button className={isOpen ? "button-out" : "button-in"}>
+            <button
+              className={isOpen ? "button-out" : "button-in"}
+              onClick={handleClick}
+            >
               ابدأ الان
             </button>
           </ul>
-          <button className={isOpen ? "button-in" : "button-out"}>
+          <button
+            className={isOpen ? "button-in" : "button-out"}
+            onClick={handleClick}
+          >
             ابدأ الان
           </button>
         </div>

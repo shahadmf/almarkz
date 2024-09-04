@@ -8,7 +8,7 @@ const Benefits = () => {
   const image4 = require("../assets/Frame 6.png");
 
   return (
-    <div className="Benefits">
+    <div className="Benefits" id="benefits">
       <h1>المزايا</h1>
       <div className="cards">
         <div className="card">
