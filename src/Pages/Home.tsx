@@ -1,8 +1,8 @@
-import React from 'react'
-import Hero from '../components/Hero'
-import Benefits from '../components/Benefits';
-import Pricing from '../components/Pricing';
-import Why from '../components/Why';
+// eslint-disable-next-line
+import React from "react";
+import Hero from "../components/Hero";
+import Benefits from "../components/Benefits";
+import Why from "../components/Why";
 
 const Home = () => {
   return (
@@ -10,9 +10,8 @@ const Home = () => {
       <Hero />
       <Why />
       <Benefits />
-      {/* <Pricing /> */}
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
