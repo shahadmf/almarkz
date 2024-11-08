@@ -21,7 +21,7 @@ const Why = () => {
         </div>
         <div className="card">
           <div className="badge b1">
-            <i className="fa-solid fa-users"></i>
+            <i className="fa-solid fa-users fa-beat"></i>
           </div>
           <div className="card-body">
             <h3 className="card-title">تفاعل عائلي مُعزز</h3>
@@ -34,7 +34,7 @@ const Why = () => {
         </div>
         <div className="card">
           <div className="badge b2">
-            <i className="fa-solid fa-sitemap"></i>
+            <i className="fa-solid fa-sitemap fa-beat"></i>
           </div>
           <div className="card-body">
             <h3 className="card-title">تنظيم بلا حدود</h3>
