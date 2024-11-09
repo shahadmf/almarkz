@@ -13,12 +13,12 @@ import usePageTracking from "./usePageTracking";
 
 function App() {
 
-  useEffect(() => {
-    ReactGA.initialize("G-3RGCT56KRX");
-    ReactGA.send("pageview");
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.initialize("G-3RGCT56KRX");
+  //   ReactGA.send("pageview");
+  // }, []);
 
-  usePageTracking();
+  // usePageTracking();
   return (
     <div className="App">
       <Router>
@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
         </Routes>
       </Router>
       <Footer />
