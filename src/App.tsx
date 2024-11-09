@@ -7,9 +7,9 @@ import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
 import Home from "./Pages/Home";
 import ContactUs from "./components/ContactUs";
-import Blog from "./components/Blog";
-import ReactGA from "react-ga4";
-import usePageTracking from "./usePageTracking";
+// import Blog from "./components/Blog";
+// import ReactGA from "react-ga4";
+// import usePageTracking from "./usePageTracking";
 
 function App() {
 
