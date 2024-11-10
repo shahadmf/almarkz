@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
 import Home from "./Pages/Home";
 import ContactUs from "./components/ContactUs";
-// import Blog from "./components/Blog";
+import Blog from "./components/Blog";
 // import ReactGA from "react-ga4";
 // import usePageTracking from "./usePageTracking";
 
@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          {/* <Route path="/blog" element={<Blog />} /> */}
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>
       <Footer />

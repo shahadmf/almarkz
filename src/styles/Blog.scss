@@ -43,6 +43,13 @@
         margin: 15px 0px;
       }
 
+      .blog-image {
+        width: 100%; // Adjust width as needed
+        height: auto;
+        margin-top: 10px;
+        border-radius: 8px; // Optional: rounded corners
+      }
+
       h2 {
         font-size: 1.5rem;
         color: $muted-teal;

@@ -22,6 +22,13 @@ const Blog = () => {
           (item) =>
             item.Status === "Done" && (
               <div className="card" key={item.id}>
+                {item.Image && item.Image.length > 0 && (
+                  <img
+                    src={item.Image[0].url}
+                    alt={item.Title}
+                    className="blog-image"
+                  />
+                )}
                 <h2>{item.Title}</h2>
                 <p className="date">{item.Date}</p>
                 <p className="blog-body">{item.Body}</p>
