@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Home Page -->
+   <url>
+      <loc>https://almarkz.io/</loc>
+      <lastmod>2024-12-15</lastmod>
+      <priority>1.0</priority>
+   </url>
+   <!-- Sections on the Home Page -->
+   <url>
+      <loc>https://almarkz.io/#why</loc>
+      <lastmod>2024-12-15</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://almarkz.io/#benefits</loc>
+      <lastmod>2024-12-15</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <!-- Pricing Page -->
+   <url>
+      <loc>https://almarkz.io/pricing</loc>
+      <lastmod>2024-12-15</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <!-- Contact Us Page -->
+   <url>
+      <loc>https://almarkz.io/contact-us</loc>
+      <lastmod>2024-12-15</lastmod>
+      <priority>0.7</priority>
+   </url>
+   <!-- Blog (currently inactive, uncomment if activated) -->
+   <!--
+   <url>
+      <loc>https://almarkz.io/blog</loc>
+      <lastmod>2024-12-15</lastmod>
+      <priority>0.6</priority>
+   </url>
+   -->
+</urlset>
